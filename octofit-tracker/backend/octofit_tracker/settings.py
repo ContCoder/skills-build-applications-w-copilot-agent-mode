@@ -27,6 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Add the suffix for the Django REST API endpoint for the Codespace
+CODESPACE_API_SUFFIX = "-8000.app.github.dev"
+
+# Ensure the Codespace URL is included in ALLOWED_HOSTS
+ALLOWED_HOSTS += [
+    f"skills-build-applications-w-copilot-agent-mode{CODESPACE_API_SUFFIX}",
+    "localhost"
+]
 
 # Application definition
 
