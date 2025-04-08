@@ -6,7 +6,7 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Lea
 def api_root(request):
     return JsonResponse({
         "message": "Welcome to the Octofit API!",
-        "codespace_url": "https://skills-build-applications-w-copilot-agent-mode-8000.app.github.dev",
+        "codespace_url": "https://[/workspaces/skills-build-applications-w-copilot-agent-mode]-8000.app.github.dev",
         "localhost_url": "http://localhost:8000"
     })
 
